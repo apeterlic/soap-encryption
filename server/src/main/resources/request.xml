@@ -1,0 +1,1 @@
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header/><SOAP-ENV:Body><ns2:getUserRequest xmlns:ns2="http://spring.io/guides/gs-producing-web-service"><ns2:id>34385351M</ns2:id></ns2:getUserRequest></SOAP-ENV:Body></SOAP-ENV:Envelope>

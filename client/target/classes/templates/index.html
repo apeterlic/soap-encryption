@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>User Data</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+    <style>
+        .btn {
+            background-color: #6f42c1;
+            color: white;
+        }
+
+        .btn:hover {
+            background-color: #6f42c1;
+            color: white;
+        }
+
+        .span{
+            font-weight:bold;
+        }
+
+
+
+    </style>
+</head>
+
+<body>
+
+<br/>
+<h2 class="d-flex justify-content-center">User Data</h2>
+<section class="my-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 mx-auto">
+                <h2>Insert User ID</h2>
+                <form method="post" th:action="@{/users}" enctype="multipart/form-data">
+                    <div class="form-group">
+                        <input type="text" name="id" class="form-control-file">
+                    </div>
+                    <button type="submit" class="btn">Generate</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="my-5">
+    <div class="container" th:if="${user ne null}">
+        <div class="row">
+            <div class="col-md-8 mx-auto">
+                <h2>User Details</h2>
+                <p>ID: <span th:text="${user?.id}"></span></p>
+                <p>NUMBER: <span th:text="${user?.nombre}"></span></p>
+                <p>PERMITION: <span th:text="${user?.permitido}"></span></p>
+            </div>
+        </div>
+    </div>
+</section>
+</body>
+</html>
