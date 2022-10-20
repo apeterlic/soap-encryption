@@ -16,9 +16,9 @@ import javax.xml.bind.annotation.XmlType;
 
 /**
  * <p>Java class for user complex type.
- * 
+ *
  * <p>The following schema fragment specifies the expected content contained within this class.
- * 
+ *
  * <pre>
  * &lt;complexType name="user"&gt;
  *   &lt;complexContent&gt;
@@ -32,14 +32,12 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;/complexContent&gt;
  * &lt;/complexType&gt;
  * </pre>
- * 
- * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "user", propOrder = {
-    "id",
-    "nombre",
-    "permitido"
+        "id",
+        "nombre",
+        "permitido"
 })
 public class User {
 
@@ -52,11 +50,9 @@ public class User {
 
     /**
      * Gets the value of the id property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
     public String getId() {
         return id;
@@ -64,11 +60,9 @@ public class User {
 
     /**
      * Sets the value of the id property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setId(String value) {
         this.id = value;
@@ -76,11 +70,9 @@ public class User {
 
     /**
      * Gets the value of the nombre property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
     public String getNombre() {
         return nombre;
@@ -88,11 +80,9 @@ public class User {
 
     /**
      * Sets the value of the nombre property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setNombre(String value) {
         this.nombre = value;
@@ -100,11 +90,9 @@ public class User {
 
     /**
      * Gets the value of the permitido property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
     public String getPermitido() {
         return permitido;
@@ -112,11 +100,9 @@ public class User {
 
     /**
      * Sets the value of the permitido property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setPermitido(String value) {
         this.permitido = value;

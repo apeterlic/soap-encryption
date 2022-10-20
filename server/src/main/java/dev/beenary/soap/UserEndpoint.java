@@ -1,8 +1,8 @@
 package dev.beenary.soap;
 
 
-import dev.beenary.repository.UserRepository;
 import dev.beenary.adapter.StringXmlAdapter;
+import dev.beenary.repository.UserRepository;
 import generated.GetUserRequest;
 import generated.GetUserResponse;
 import org.springframework.ws.server.endpoint.annotation.Endpoint;

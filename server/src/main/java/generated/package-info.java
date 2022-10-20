@@ -9,8 +9,8 @@
 @javax.xml.bind.annotation.XmlSchema(namespace = "http://spring.io/guides/gs-producing-web-service", elementFormDefault = javax.xml.bind.annotation.XmlNsForm.QUALIFIED)
 @javax.xml.bind.annotation.adapters.XmlJavaTypeAdapters({
         @javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter(
-                value= StringXmlAdapter.class,
-                type=String.class)
+                value = StringXmlAdapter.class,
+                type = String.class)
 //        ,
 //        @javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter(
 //                value= UserXmlAdapter.class,
