@@ -14,6 +14,7 @@
     <version>1.0.0</version>
     <name>soap-server</name>
     <description>SOAP server</description>
+    <packaging>jar</packaging>
 
     <properties>
         <maven.compiler.source>8</maven.compiler.source>

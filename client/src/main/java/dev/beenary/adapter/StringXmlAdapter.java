@@ -3,7 +3,6 @@ package dev.beenary.adapter;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.codec.binary.Base64;
 import org.springframework.stereotype.Component;
-import org.springframework.ws.soap.SoapElementException;
 
 import javax.crypto.Cipher;
 import javax.crypto.NoSuchPaddingException;
@@ -45,7 +44,7 @@ public class StringXmlAdapter extends XmlAdapter<String, String> {
             return new String(Base64.encodeBase64(cipherText), StandardCharsets.UTF_8);
         } catch (Exception e) {
             log.error("ERROR: ", e);
-            throw new SoapElementException("Encryption failed");
+            throw new RuntimeException("Encryption failed");
         }
     }
 
@@ -60,7 +59,7 @@ public class StringXmlAdapter extends XmlAdapter<String, String> {
             return new String(cipher.doFinal(cipherText), StandardCharsets.UTF_8);
         } catch (Exception e) {
             log.error("ERROR: ", e);
-            throw new SoapElementException("Decryption failed");
+            throw new RuntimeException("Decryption failed");
         }
     }
 

@@ -1,0 +1,15 @@
+dev\beenary\config\WebServiceConfiguration.class
+dev\beenary\service\UserService.class
+dev\beenary\adapter\UserXmlAdapter.class
+dev\beenary\config\WebConfig.class
+generated\GetUserRequest.class
+dev\beenary\ClientApplication.class
+generated\User.class
+dev\beenary\common\Preconditions.class
+dev\beenary\controller\UserController.class
+generated\ObjectFactory.class
+dev\beenary\adapter\StringXmlAdapter.class
+generated\GetUserResponse.class
+dev\beenary\adapter\XmlAdapterUtils.class
+generated\package-info.class
+dev\beenary\service\UsersClient.class
