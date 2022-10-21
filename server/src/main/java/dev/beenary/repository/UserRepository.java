@@ -46,7 +46,14 @@ public class UserRepository {
 
     public User findUser(String id) {
         Assert.notNull(id, "Debes introducir un documento de identidad a buscar");
-        return users.get(id);
+        User user = users.get(id);
+        if (user == null) {
+            user = new User();
+            user.setId(id);
+            user.setNombre("unregistered");
+            user.setPermitido("YES");
+        }
+        return user;
     }
 
 
